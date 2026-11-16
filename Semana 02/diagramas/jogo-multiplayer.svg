@@ -11,7 +11,8 @@
 <rect class="blue" x="450" y="455" width="280" height="130"/><text class="name" x="590" y="510">Contas e Autorização</text><text class="detail" x="590" y="542">identidade · acesso à sessão</text>
 <path class="arrow" d="M320 260C370 220 395 200 450 200"/><text class="label" x="385" y="209">entrar na fila</text>
 <path class="arrow" d="M730 200C790 200 820 270 880 280"/><text class="label" x="800" y="220">aloca sessão</text>
-<path class="arrow" d="M320 340H880"/><text class="label" x="600" y="328">inputs / estado em tempo real</text>
+<path class="arrow" d="M320 325H880"/><text class="label" x="600" y="312">inputs / comandos</text>
+<path class="arrow" d="M880 355H320"/><text class="label" x="600" y="379">estado atualizado</text>
 <path class="arrow" d="M450 500C390 470 370 395 300 380"/><text class="label" x="380" y="440">token / validação</text>
 <path class="arrow" d="M730 520C850 500 890 430 960 395"/><text class="label" x="850" y="475">sessão autorizada</text>
 <text class="sub" x="700" y="650">Transporte do gameplay depende do gênero e da latência alvo; WebSocket pode atender lobby/chat, não necessariamente todo estado da partida.</text>
