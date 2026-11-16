@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="700" viewBox="0 0 1400 700" role="img" aria-labelledby="title desc">
+<title id="title">Diagrama de blocos — jogo multiplayer cliente-servidor</title>
+<desc id="desc">Clientes enviam comandos ao serviço de matchmaking, que os conecta a um servidor autoritativo de partida. Serviço de contas e autorização valida o acesso. O servidor envia estado atualizado aos clientes.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0 0L10 4L0 8Z" fill="#334155"/></marker><style>.bg{fill:#f8fafc}.box{fill:#fff;stroke:#334155;stroke-width:2;rx:18}.blue{fill:#eff6ff;stroke:#2563eb;stroke-width:2;rx:18}.green{fill:#f0fdf4;stroke:#15803d;stroke-width:2;rx:18}.title{font:700 29px system-ui,sans-serif;fill:#101828;text-anchor:middle}.sub{font:16px system-ui,sans-serif;fill:#475467;text-anchor:middle}.name{font:700 20px system-ui,sans-serif;fill:#101828;text-anchor:middle}.detail{font:15px system-ui,sans-serif;fill:#475467;text-anchor:middle}.arrow{stroke:#334155;stroke-width:3;fill:none;marker-end:url(#a)}.label{font:14px system-ui,sans-serif;fill:#334155;text-anchor:middle}</style></defs>
+<rect class="bg" width="1400" height="700"/>
+<text class="title" x="700" y="55">Jogo multiplayer — cliente-servidor autoritativo</text>
+<text class="sub" x="700" y="88">Visão conceitual de uma partida online em tempo real</text>
+<rect class="box" x="70" y="235" width="250" height="145"/><text class="name" x="195" y="288">Clientes</text><text class="detail" x="195" y="322">input · renderização · predição</text><text class="detail" x="195" y="347">reconexão</text>
+<rect class="blue" x="450" y="135" width="280" height="130"/><text class="name" x="590" y="190">Matchmaking</text><text class="detail" x="590" y="222">agrupa jogadores · seleciona região</text>
+<rect class="green" x="880" y="235" width="300" height="160"/><text class="name" x="1030" y="288">Servidor de Partida</text><text class="detail" x="1030" y="322">autoridade do estado do jogo</text><text class="detail" x="1030" y="347">valida ações · sincroniza sessão</text><text class="detail" x="1030" y="372">instância por partida/região</text>
+<rect class="blue" x="450" y="455" width="280" height="130"/><text class="name" x="590" y="510">Contas e Autorização</text><text class="detail" x="590" y="542">identidade · acesso à sessão</text>
+<path class="arrow" d="M320 260C370 220 395 200 450 200"/><text class="label" x="385" y="209">entrar na fila</text>
+<path class="arrow" d="M730 200C790 200 820 270 880 280"/><text class="label" x="800" y="220">aloca sessão</text>
+<path class="arrow" d="M320 340H880"/><text class="label" x="600" y="328">inputs / estado em tempo real</text>
+<path class="arrow" d="M450 500C390 470 370 395 300 380"/><text class="label" x="380" y="440">token / validação</text>
+<path class="arrow" d="M730 520C850 500 890 430 960 395"/><text class="label" x="850" y="475">sessão autorizada</text>
+<text class="sub" x="700" y="650">Transporte do gameplay depende do gênero e da latência alvo; WebSocket pode atender lobby/chat, não necessariamente todo estado da partida.</text>
+</svg>
